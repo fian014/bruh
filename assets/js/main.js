@@ -260,3 +260,8 @@
   });
 
 })()
+
+function themeFunction() {
+  var change = document.body;
+  change.classList.toggle("dark-mode");
+}
