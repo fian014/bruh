@@ -58,12 +58,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #00bfff;
+  background: #000;
   color: #eaeaea;
 }
 
 ::selection {
-  background: #00bfff;
+  background: #000;
   color: #eaeaea;
 }
 
