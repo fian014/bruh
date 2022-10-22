@@ -1,0 +1,75 @@
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* root */
+
+/* slection text */
+label::selection, input::selection, h2::selection, p::selection, strong::selection {
+    background-color: #222;
+    color: pink;
+}
+/* body */
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    /* background-image: url('./img/cansaw\ \(1\).jpg'); */
+    background-image: url("./img/giphy.gif");
+    background-position: center;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+}
+/* container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* img */
+.img-desktop img {
+    width: 400px;
+    position: fixed;
+    top: 250px;
+    right: 230px;
+    border-radius: 20px;
+}
+/* box position center ui */
+.box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100vh;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+/* media */
+@media screen and (max-width: 350px) {
+    .box-center {
+        width: auto;
+    }
+    .img-desktop img {
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 350px) {
+    .box-center {
+        width: 75%;
+    }
+    .img-desktop img {
+        visibility: hidden;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 900px) {
+    .img-desktop img {
+        width: 250px;
+        top: 250px;
+        right: 60px;
+    }
+}
